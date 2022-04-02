@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Account | Kavosh online book store</title>
+  <link rel="stylesheet" href="style.css" /> 
+  <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"/>
+
+</head> 
+<body> 
+<!------------------ Header ------------------> 
+  <div class="container"> 
+    <div class="navbar"> 
+      <div class="logo"> 
+        <a href="index.html"> 
+          <img src="images/logo.png" alt="" width="80px" /> 
+        </a> 
+      </div> 
+      <!----------  Nav Bar ------------------> 
+      <nav> 
+        <ul id="MenuItems"> 
+          <li><a href="index.html">Home</a></li> 
+          <li><a href="books.html">Books</a></li> 
+          <li><a href="book-detail.html">More</a></li> 
+          <li><a href="#contact">Contact</a></li> 
+          <li style="font-weight: bold;"><a href="#">Account</a></li> 
+          <li>
+            <a href="shopping.html">
+            <i class="fas fa-shopping-cart" style="font-size: 20px;"></i></a>
+        </li>
+        </ul> 
+      </nav>       
+    </div> 
+  </div> 
+  
+<!-- ---------- account page------------- --> 
+  <div class="account-page"> 
+    <div class="container"> 
+      <div class="row"> 
+        <div class="col-2"> 
+          <img src="images/Start Menu 479.ico" alt="" width="50%" /> 
+        </div> 
+        <div class="col-2"> 
+          <div class="form-container"> 
+            <div class="form-btn"> 
+              <span onclick="signIn()"> Sign In </span> 
+              <span onclick="signUp()"> Sign Up </span> 
+              <hr id="indicator" /> 
+              <form id="signInForm" name="myform"> 
+                <input type="text" placeholder="Username" name="uname" required /> 
+                <span id="uname"></span> 
+                <input type="password" placeholder="Password" min="8" required /> 
+                <button type="submit" class="btn">Sign In</button> 
+                <a href="">Forgot password</a> 
+              </form> 
+              <form id="signUpForm"> 
+                <input type="text" placeholder="Username" required/> 
+                <input type="email" placeholder="Email" required/> 
+                <input type="password" placeholder="Password" required/> 
+                <button type="submit" class="btn">Sign Up</button> 
+              </form> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+<!-- ---------------------footer------------------- --> 
+  <div class="footer" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Every thing you need is here.</p>
+                <div class="app-logo">
+                    <img src="images/Playstore.png" alt="Playstore-image" />
+                    <img src="images/Applestore.png" alt="Applestore-image" />
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/publisher2.png" alt="" />
+                <p>A room without books is like a body without a soul.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Web developnent</li>
+                    <li>Web design</li>
+                    <li>programming language</li>
+                    <li>Smart phones</li>
+                    <li>computer types</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><i class="fab fa-facebook"></i>Facebook</li>
+                    <li><i class="fab fa-youtube"></i>Youtube</li>
+                    <li><i class="fab fa-instagram"></i>Instagram</li>
+                    <li><i class="fab fa-twitter"></i>Twitter</li>
+                    <li><i class="fab fa-linkedin"></i>linkedin</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - KbookStore</p>
+    </div>
+  </div> 
+  <script src="toggle.js"></script>
+</body> 
+</html> 
